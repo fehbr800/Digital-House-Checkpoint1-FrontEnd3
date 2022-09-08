@@ -8,7 +8,7 @@ import profileIMG from "./componets/images/profileIMG.png";
 import card1IMG from "./componets/images/card2.jpg";
 import card2IMG from "./componets/images/card2.png"
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import Footer from "./componets/footer";
+import Footer from "./componets/Footer";
 
 function App() {
   const valoresIniciais = { name: "", email: "", subject: "", messager: "" };
