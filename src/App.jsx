@@ -24,6 +24,7 @@ function App() {
   const submit = (e) => {
     e.preventDefault();
     console.log("new", formValues);
+    e.Modal()
   };
 
   return (
@@ -211,7 +212,7 @@ function App() {
               <button className="c-btn" type="submit" onClick={submit} data-bs-toggle="modal" data-bs-target="#modal">
                 <SendIcon />
                 Enviar
-          
+                <Modal name={formValues.name}/>  
               </button>
           
             </div>
@@ -221,6 +222,7 @@ function App() {
         </section>
 
         <Footer />
+      
       </div>
     </div>
   );

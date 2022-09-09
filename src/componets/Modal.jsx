@@ -13,7 +13,7 @@ export default function Modal({name}) {
                                         aria-label="Close"></button>
                                 </div>
                                 <div className="modal-body">
-                                    <p>Obrigado pelo interesse, entrarei em contato em breve!!😙.</p>
+                                    <p>Obrigado pelo interesse!! Responderei o mais breve possível!!😙.</p>
                                 </div>
                             </div>
                         </div>
