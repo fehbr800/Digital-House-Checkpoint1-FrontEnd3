@@ -8,6 +8,7 @@ import profileIMG from "./componets/images/profileIMG.png";
 import card1IMG from "./componets/images/card2.jpg";
 import card2IMG from "./componets/images/card2.png"
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+// import Modal from './componets/Modal';
 import Footer from "./componets/Footer";
 
 function App() {
@@ -50,35 +51,35 @@ function App() {
                 <LinkedInIcon />Linkedin</a>
             </nav>
 
-           
+
           </div>
 
           <div className="backgroundContainer">
             <div className="img_bg ">
               <img src={profileIMG} />
             </div>
-            
+
           </div>
         </main>
       </div>
 
       {/* <!-- Sessão Sobre mim --> */}
       <div className="l-page" id="sobre-mim">
-      <article className="aboutText">
-              <h1 className="title" id="sobre-mim">
-                Sobre mim
-              </h1>
-              <p>
-                Tenho 21 anos, atualmente estudando desenvolvimento Full-Stack
-                com especialização Front-End pela Digital House.
-              </p>
-              <p>
-                Meu objetivo profissional é me especializar e aprimorar minhas
-                habilidades de desenvolvimento Front-end e ferramentas de testes
-                unitários, focando sempre em qualidade e acessibilidade da
-                aplicação
-              </p>
-            </article>
+        <article className="aboutText">
+          <h1 className="title" id="sobre-mim">
+            Sobre mim
+          </h1>
+          <p>
+            Tenho 21 anos, atualmente estudando desenvolvimento Full-Stack
+            com especialização Front-End pela Digital House.
+          </p>
+          <p>
+            Meu objetivo profissional é me especializar e aprimorar minhas
+            habilidades de desenvolvimento Front-end e ferramentas de testes
+            unitários, focando sempre em qualidade e acessibilidade da
+            aplicação
+          </p>
+        </article>
       </div>
 
       {/* <!-- Sessão Skills--> */}
@@ -92,7 +93,7 @@ function App() {
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" />
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" />
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" />
-           
+
           </div>
         </article>
       </div>
@@ -105,8 +106,8 @@ function App() {
           <div className="containerCards">
             <div className="cardInd">
               <a href="https://digital-house-checkpoint2-frontend.vercel.app/"><img
-                src={card1IMG}/></a>           
-              
+                src={card1IMG} /></a>
+
               <figcaption>DHFlix</figcaption>
             </div>
 
@@ -138,21 +139,21 @@ function App() {
               Linkedin
             </a>
             <a className="socialIcon" href="tel:+5566999719231">
-              <LocalPhoneIcon/>
+              <LocalPhoneIcon />
               Telefone
             </a>
           </nav>
 
           <form name="contact" className="c-form">
             <div className="c-form__group">
-              <label htmlFor="name" 
-              className="c-form__label"
-              
+              <label htmlFor="name"
+                className="c-form__label"
+
               >
                 Nome
               </label>
               <input
-                required 
+                required
                 type="text"
                 placeholder="Digite seu nome"
                 id="name"
@@ -166,7 +167,7 @@ function App() {
                 E-mail
               </label>
               <input
-                required 
+                required
                 type="text"
                 placeholder="Digite seu e-mail"
                 id="email"
@@ -180,7 +181,7 @@ function App() {
                 Assunto
               </label>
               <select
-                required 
+                required
                 id="subject"
                 className="c-form__control"
                 value={formValues.subject}
@@ -197,7 +198,7 @@ function App() {
                 Mensagem
               </label>
               <textarea
-                required 
+                required
                 rows="5"
                 placeholder="Se desejar, explique-me melhor..."
                 id="messager"
@@ -207,15 +208,18 @@ function App() {
               />
             </div>
             <div className="c-form__group">
-              <button className="c-btn" type="submit" onClick={submit}>
+              <button className="c-btn" type="submit" onClick={submit} data-bs-toggle="modal" data-bs-target="#modal">
                 <SendIcon />
                 Enviar
               </button>
-            </div>
-          </form>
-        </section>
 
+            </div>
+
+          </form>
+
+        </section>
         <Footer />
+
       </div>
     </div>
   );

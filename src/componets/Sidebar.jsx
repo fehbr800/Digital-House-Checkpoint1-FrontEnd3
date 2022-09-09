@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
-
+import ContactsIcon from '@mui/icons-material/Contacts';
+import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
 function Sidebar() {
  
 
@@ -43,10 +44,13 @@ function Sidebar() {
           <h1 className="l-logo">Matheus Emanoel</h1>
           <nav className="sidebar__text">
             <a className="sidebar__item " href="#sobre-mim">
+              <SentimentSatisfiedAltIcon/>
               Sobre mim
             </a>
             <a className="sidebar__item " href="#contatos">
+            <ContactsIcon/>
               Contatos
+             
             </a>
           </nav>
         </div>
