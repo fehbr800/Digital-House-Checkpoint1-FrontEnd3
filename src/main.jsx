@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './assets/global.css'
-import './componets/Sidebar.css'
+import './components/Sidebar.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
