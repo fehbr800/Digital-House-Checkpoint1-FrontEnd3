@@ -1,15 +1,15 @@
-import Sidebar from "./componets/Sidebar";
+import Sidebar from "./components/Sidebar";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import SendIcon from "@mui/icons-material/Send";
 import { useState } from "react";
-import profileIMG from "./componets/images/profileIMG.png";
-import card1IMG from "./componets/images/card2.jpg";
-import card2IMG from "./componets/images/card2.png"
+import profileIMG from "./components/images/profileIMG.png";
+import card1IMG from "./components/images/card2.jpg";
+import card2IMG from "./components/images/card2.png"
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import Modal from './componets/Modal';
-import Footer from "./componets/Footer";
+import Modal from './components/Modal';
+import Footer from "./components/Footer";
 
 function App() {
   const valoresIniciais = { name: "", email: "", subject: "", messager: "" };
