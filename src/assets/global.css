@@ -8,10 +8,9 @@ html {
 
 body {
     /* background-color: rgb(19, 12, 37); */
-    background: url(../componets/images/background.jpg);
-    background-color: rgba(0, 0, 0, 0.7);
-    background-size: 50%;
-
+    background: url(../componets/images/purple-gradient-1.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: white;
@@ -196,7 +195,10 @@ Sessão Portifólio - Estilização
     font-size: 20px;
     transform: perspective(800px) rotateY(25deg);
     transition: 0.5s;
-    
+    -webkit-transform: perspective(800px) rotateY(25deg);
+    -moz-transform: perspective(800px) rotateY(25deg);
+    -ms-transform: perspective(800px) rotateY(25deg);
+    -o-transform: perspective(800px) rotateY(25deg);
 }
 
 .cardInd:hover figcaption{
@@ -262,7 +264,7 @@ Sessão contato - Estilização
 }
 .c-btn {
     cursor: pointer;
-    background-color: rgba(233, 6, 165, 0.541);
+    background-color: rgba(196, 21, 143, 0.541);
     border: none;
     border-radius: 5px;
     color: white;

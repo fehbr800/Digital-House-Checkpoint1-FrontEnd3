@@ -8,7 +8,7 @@ import profileIMG from "./componets/images/profileIMG.png";
 import card1IMG from "./componets/images/card2.jpg";
 import card2IMG from "./componets/images/card2.png"
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-// import Modal from './componets/Modal';
+import Modal from './componets/Modal';
 import Footer from "./componets/Footer";
 
 function App() {
@@ -211,15 +211,16 @@ function App() {
               <button className="c-btn" type="submit" onClick={submit} data-bs-toggle="modal" data-bs-target="#modal">
                 <SendIcon />
                 Enviar
+          
               </button>
-
+          
             </div>
 
           </form>
-
+   
         </section>
-        <Footer />
 
+        <Footer />
       </div>
     </div>
   );
